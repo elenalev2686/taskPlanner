@@ -12,6 +12,7 @@ public class TaskTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldNotMatchesQuerySimpleTask() {
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
@@ -21,6 +22,7 @@ public class TaskTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldMatchesQueryEpic() {
         String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
@@ -31,6 +33,7 @@ public class TaskTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldNotMatchesQueryEpic() {
         String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
@@ -41,6 +44,7 @@ public class TaskTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldMatchesQueryMeeting() {
         Meeting meeting = new Meeting(
@@ -55,6 +59,7 @@ public class TaskTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldNotMatchesQueryMeeting() {
         Meeting meeting = new Meeting(
@@ -69,6 +74,7 @@ public class TaskTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldNotMatchesQuery() {
         Task task = new Task(55);
@@ -89,6 +95,7 @@ public class TaskTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldGetId() {
         Task task = new Task(5);
@@ -99,6 +106,7 @@ public class TaskTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
     @Test
     public void ShouldGetTitle() {
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
@@ -109,6 +117,7 @@ public class TaskTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
     @Test
     public void ShouldGetSubtasks() {
         String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
@@ -120,6 +129,7 @@ public class TaskTest {
         Assertions.assertArrayEquals(expected, actual);
 
     }
+
     @Test
     public void shouldGetTopic() {
         Meeting meeting = new Meeting(
@@ -134,6 +144,7 @@ public class TaskTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldGetProject() {
         Meeting meeting = new Meeting(
@@ -148,6 +159,7 @@ public class TaskTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldGetStart() {
         Meeting meeting = new Meeting(
@@ -162,8 +174,9 @@ public class TaskTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void testHashCode() {
+    public void testHashCode() {
         Task task = new Task(0);
         task.hashCode();
         int expected = 31;
@@ -171,6 +184,7 @@ public class TaskTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void testEquals1() {
         Task task = new Task(0);
@@ -180,6 +194,7 @@ public class TaskTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void testEquals() {
         Task task = new Task(5);
