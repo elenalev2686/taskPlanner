@@ -40,7 +40,7 @@ public class TaskTest {
         Epic epic = new Epic(55, subtasks);
 
         boolean expected = false;
-        boolean actual = epic.matches("Во вторник после обеда");
+        boolean actual = epic.matches("Во вторник");
 
         Assertions.assertEquals(expected, actual);
     }
