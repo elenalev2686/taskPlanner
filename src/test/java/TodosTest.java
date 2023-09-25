@@ -2,7 +2,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import ru.netology.taskplanner.service.*;
 
-
 public class TodosTest {
     @Test
     public void shouldAddThreeTasksOfDifferentType() {
